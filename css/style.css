@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap");
-
+:root{
+    --heading: #231f20;
+    --reddish-color: #e60023
+}
 body {
   max-width: 1440px;
   margin: auto;
@@ -33,14 +36,14 @@ body {
 }
 
 .search__icon {
-    width: 40px;
-    height: 34px;
-    flex-shrink: 0;
-    border-radius: 0px 30px 30px 0px;
-    background: rgba(255, 255, 255, 0.4);
-    position: absolute;
-    top: 13px;
-    right: 3px;
+  width: 40px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 0px 30px 30px 0px;
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 13px;
+  right: 3px;
 }
 .avatar__container {
   border-radius: 32px;
@@ -75,4 +78,53 @@ body {
   line-height: normal;
   margin: 0;
   margin-left: 3px;
+}
+
+.nav__links__container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.nav__links__container li a {
+  display: block;
+  /* color: white; */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: var(--heading, #231f20);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.nav__links__container li button {
+  width: 150px;
+  height: 35px;
+  border-radius: 32px;
+  color: #fff;
+  border: 1px solid #f10027;
+  background: var(--reddish-color, #e60023); 
+}
+
+
+/* hero */
+
+.hero{
+    height: 663px; 
+    background: var(--reddish-color);
+}
+
+.hero__bg{
+    position: absolute;
+    right: 0;
+}
+.hero__img{
+    position: absolute;
+    z-index: 2;
+    right: 0;
 }
